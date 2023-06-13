@@ -19,6 +19,7 @@
   transition: 0.3s;
   cursor: pointer;
   padding: 0.5em 1em;
+  margin-bottom: 1.5em;
 }
 
 .form button[type="submit"]:hover {

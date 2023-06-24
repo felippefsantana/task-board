@@ -1,13 +1,32 @@
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 
-import illustrationImg from '../../assets/images/illustration.svg'
+import { useAuth } from '../../hooks/useAuth';
+
+import illustrationImg from '../../assets/images/illustration.svg';
 
 import styles from './styles.module.css';
 
-type Props = {}
+const Login = () => {
+  const navigate = useNavigate();
+  const { user, signInWithGoogle } = useAuth();
 
-const Login = (props: Props) => {
+  const handleSignInWithGoogle = async () => {
+    if (!user) {
+      await signInWithGoogle();
+    }
+
+    navigate('/');
+  }
+
+  useEffect(() => {
+    if (user) {
+      navigate('/');
+    }
+  }, [user, navigate]);
+
   return (
     <div id={styles["pageAuth"]} className="d-flex">
       <aside className="d-none d-md-flex">
@@ -29,6 +48,7 @@ const Login = (props: Props) => {
           <button
             className="btn btn-lg btn-signin-google d-flex align-items-center justify-content-center gap-2"
             type="button"
+            onClick={handleSignInWithGoogle}
           >
             <FontAwesomeIcon icon={faGoogle} />Entrar com o Google
           </button>

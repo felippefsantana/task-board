@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
 }
@@ -18,4 +18,15 @@ code {
 
 .hide {
   display: none !important;
+} */
+
+.btn-signin-google {
+  background-color: #ea4335!important;
+  color: #fff!important;
+}
+
+.btn-signin-google:hover {
+  background-color: #ea4335;
+  color: #fff;
+  filter: brightness(0.9);
 }

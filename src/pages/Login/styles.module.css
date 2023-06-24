@@ -1,0 +1,42 @@
+#pageAuth {
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+}
+
+#pageAuth aside {
+  flex: 8;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 120px 80px;
+}
+
+#pageAuth aside img {
+  max-width: 680px;
+}
+
+#pageAuth main {
+  flex: 6;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pageAuth main .mainContent {
+  width: 100%;
+  max-width: 320px;
+}
+
+#pageAuth .separator {
+  font-size: 14px;
+  background-color: #a8a8b3;
+  content: '';
+  width: 1px;
+  height: 80vh;
+  align-self: center;
+}

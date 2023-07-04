@@ -44,7 +44,7 @@ const Login = () => {
 
       <main>
         <div className={`${styles.mainContent} d-flex flex-column align-items-stretch text-center p-3`}>
-          <h1>Task Board</h1>
+          <h1>TaskBoard</h1>
           <button
             className="btn btn-lg btn-signin-google d-flex align-items-center justify-content-center gap-2"
             type="button"

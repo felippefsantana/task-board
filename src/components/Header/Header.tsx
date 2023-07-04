@@ -12,7 +12,7 @@ const Header = () => {
 
   const handleSignOut = () => {
     logout();
-    // navigate('/login');
+    navigate('/login');
   };
 
   return (
@@ -34,9 +34,14 @@ const Header = () => {
                 </button>
                 <div className={`${styles.headerDropdown} dropdown-menu p-2 border-light-subtle`}>
                   <h2 className="fs-6 text-secondary">Suas Áreas de Trabalho</h2>
-                  <div>
-                    <div className={`${styles.headerDropdownItem} rounded-1`}>
+                  <div className={styles.workspaceDropdown}>
+                    <div className={`${styles.headerDropdownItem} ${styles.workspaceDropdownItem} rounded-1`}>
                       <Link to="#" className="d-flex align-items-center px-2">
+                        {/* <div className={`${styles.workspaceDropdownItemIcon} d-flex align-items-center justify-content-center`}>
+                          <div className="rounded-1 d-flex align-items-center justify-content-center bg-success text-white">
+                            W
+                          </div>
+                        </div> */}
                         <p className="p-0 m-0">workspace 1</p>
                       </Link>
                     </div>
@@ -54,14 +59,14 @@ const Header = () => {
                   Criar<FontAwesomeIcon icon={faPlus} className="ms-2" />
                 </button>
                 <div className={`${styles.headerDropdown} dropdown-menu border-light-subtle`}>
-                  <div className={`${styles.headerDropdownItem} dropdown-item`}>
+                  <button className={`${styles.headerDropdownItem} dropdown-item text-wrap`}>
                     <span>Criar Quadro</span>
-                    <p></p>
-                  </div>
-                  <div className={`${styles.headerDropdownItem} dropdown-item`}>
+                    <p className="text-dark-emphasis">Um quadro é um conjunto de cartões organizados em listas. Use-o para gerenciar e controlar suas atividades.</p>
+                  </button>
+                  <button className={`${styles.headerDropdownItem} dropdown-item text-wrap`}>
                     <span>Criar Área de trabalho</span>
-                    <p></p>
-                  </div>
+                    <p className="text-dark-emphasis">Uma área de trabalho é um conjunto de quadros. Use-a para gerenciar atividades paralelas.</p>
+                  </button>
                 </div>
               </div>
             </>

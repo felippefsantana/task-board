@@ -1,3 +1,8 @@
+.headerContent a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .headerContent .headerDropdown {
   max-width: 320px;
   width: 100%;
@@ -10,10 +15,8 @@
   text-decoration: none;
   /* #A6C5E229 */
 }
-
-.headerContent a {
-  color: inherit;
-  text-decoration: none;
+.headerContent .headerDropdown p {
+  font-size: 0.875rem;
 }
 
 .btnHeader {
@@ -32,18 +35,11 @@
   color: #44546F;
 }
 
-.btnWorkSpaces, .btnLogout {
-  border-color: transparent !important;
+.workspaceDropdown .workspaceDropdownItem .workspaceDropdownItemIcon {
+  height: 40px;
+  width: 40px;
 }
-.btnWorkSpaces:active {
-  background-color: #091E424F;
-  color: #172B4D;
-}
-.btnWorkSpaces:focus, .btnLogout:focus {
-  outline: 0;
-  border-color: none !important;
-}
-.btnWorkSpaces:hover, .btnLogout:hover {
-  background-color: #091E4224;
-  color: #44546F;
+.workspaceDropdown .workspaceDropdownItem .workspaceDropdownItemIcon div {
+  height: 100%;
+  width: 100%;
 }

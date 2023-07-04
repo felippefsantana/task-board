@@ -3,9 +3,11 @@ import styles from './styles.module.css';
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Header />
-    </div>
+      <div id={styles["pageHome"]}>
+      </div>
+    </>
   )
 }
 

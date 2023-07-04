@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 
@@ -23,12 +23,12 @@ const Login = () => {
 
   useEffect(() => {
     if (user) {
-      navigate('/');
+      navigate('/dashboard');
     }
   }, [user, navigate]);
 
   return (
-    <div id={styles["pageAuth"]} className="d-flex">
+    <div id={styles["pageAuth"]}>
       <aside className="d-none d-md-flex">
         <img src={illustrationImg} alt="Ilustração simbolizando a conclusão de tarefas" />
         <div className="mb-3">
@@ -36,7 +36,7 @@ const Login = () => {
           <p className="fs-5 text-secondary">Crie e gerencie suas tarefas em tempo-real</p>
         </div>
         <small>
-          <a href="https://br.freepik.com/vetores-gratis/ilustracao-do-conceito-de-lista-de-verificacao_5573507.htm#query=tasks&position=22&from_view=search&track=sph">Imagem de storyset</a> no Freepik
+          <Link target="_blank" to="https://br.freepik.com/vetores-gratis/ilustracao-do-conceito-de-lista-de-verificacao_5573507.htm#query=tasks&position=22&from_view=search&track=sph">Imagem de storyset</Link> no Freepik
         </small>
       </aside>
 

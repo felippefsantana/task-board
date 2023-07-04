@@ -1,10 +1,11 @@
-import React from 'react'
+import Header from '../../components/Header/Header';
+import styles from './styles.module.css';
 
-type Props = {}
-
-const Home = (props: Props) => {
+const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <Header />
+    </div>
   )
 }
 

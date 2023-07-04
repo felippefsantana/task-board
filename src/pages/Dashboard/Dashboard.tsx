@@ -1,10 +1,11 @@
-import React from 'react'
+import Header from '../../components/Header/Header';
+import styles from './styles.module.css';
 
-type Props = {}
-
-const Dashboard = (props: Props) => {
+const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <div id={styles['dashboardPage']}>
+      <Header />
+    </div>
   )
 }
 

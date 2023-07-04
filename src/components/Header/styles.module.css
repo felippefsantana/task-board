@@ -1,0 +1,33 @@
+.headerContent .headerDropdown {
+  max-width: 320px;
+  width: 100%;
+  box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.1);
+}
+
+.headerContent a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.btnWorkSpaces {
+  border-color: transparent !important;
+}
+.btnWorkSpaces:active {
+  background-color: #091E424F;
+  color: #172B4D;
+}
+.btnWorkSpaces:focus {
+  outline: 0;
+  border-color: none !important;
+}
+.btnWorkSpaces:hover {
+  background-color: #091E4224;
+  color: #44546F;
+}
+
+.workspaceList .workspaceItem:hover {
+  background-color: #091E4224;
+  color: #44546F;
+  text-decoration: none;
+  /* #A6C5E229 */
+}

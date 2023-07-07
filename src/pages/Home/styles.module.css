@@ -1,3 +1,23 @@
 #pageHome {
   height: 100vh;
 }
+
+.mainContainer .workspaceNavbar {
+  flex: 3;
+  max-width: 280px;
+}
+.mainContainer .workspaceNavbar a {
+  color: inherit;
+}
+
+.mainContainer .mainContent {
+  flex: 7;
+}
+
+.workspaceList .workspaceItem {
+  transition: 0.1s;
+}
+.workspaceList .workspaceItem:hover {
+  background-color: #091E4224;
+  color: inherit;
+}

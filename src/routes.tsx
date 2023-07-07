@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AuthContextProvider } from './contexts/AuthContext';
 
 // Pages
-import Home from './pages/Home/Home';
-import Login from './pages/Login/Login';
+import Home from './pages/Home';
+import Login from './pages/Login';
 
 const AppRoutes = () => {
   return (

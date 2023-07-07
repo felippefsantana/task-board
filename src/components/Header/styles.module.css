@@ -19,22 +19,6 @@
   font-size: 0.875rem;
 }
 
-.btnHeader {
-  border-color: transparent !important;
-}
-.btnHeader:active {
-  background-color: #091E424F;
-  color: #172B4D;
-}
-.btnHeader:focus, .btnHeader:focus {
-  outline: 0;
-  border-color: none !important;
-}
-.btnHeader:hover, .btnHeader:hover {
-  background-color: #091E4224;
-  color: #44546F;
-}
-
 .workspaceDropdown .workspaceDropdownItem .workspaceDropdownItemIcon {
   height: 40px;
   width: 40px;

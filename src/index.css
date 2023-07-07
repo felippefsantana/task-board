@@ -30,3 +30,19 @@ code {
   color: #fff;
   filter: brightness(0.9);
 }
+
+.btn-transparent {
+  border-color: transparent !important;
+}
+.btn-transparent:active {
+  background-color: #091E424F;
+  color: #172B4D;
+}
+.btn-transparent:focus, .btn-transparent:focus {
+  outline: 0;
+  border-color: none !important;
+}
+.btn-transparent:hover, .btn-transparent:hover {
+  background-color: #091E4224;
+  color: #44546F;
+}

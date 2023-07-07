@@ -24,7 +24,7 @@ const Header = () => {
             <>
               <div>
                 <button
-                  className={`${styles.btnHeader} btn rounded-1`}
+                  className="btn btn-transparent rounded-1"
                   type="button"
                   data-bs-toggle="dropdown"
                   data-bs-auto-close="outside"
@@ -74,16 +74,16 @@ const Header = () => {
         </div>
 
         <div className="d-flex align-items-center gap-2">
-          <button className={`${styles.btnHeader} btn rounded-circle`}>
+          <button className="btn btn-transparent rounded-circle">
             <FontAwesomeIcon icon={faCircleHalfStroke} rotation={180} />
           </button>
 
           {user ? (
-            <button className={`${styles.btnHeader} btn rounded-1`} onClick={handleSignOut}>
+            <button className="btn btn-transparent rounded-1" onClick={handleSignOut}>
               Sair<FontAwesomeIcon icon={faArrowRightFromBracket} className="ms-2" />
             </button>
           ) : (
-            <Link to="/login" className={`${styles.btnHeader} btn rounded-1`}>
+            <Link to="/login" className="btn btn-transparent rounded-1">
               Entrar<FontAwesomeIcon icon={faArrowRightToBracket} className="ms-2" />
             </Link>
           )}

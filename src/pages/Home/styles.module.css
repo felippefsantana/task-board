@@ -15,6 +15,7 @@
 }
 
 .workspaceList .workspaceItem {
+  min-height: 2.25rem;
   transition: 0.1s;
 }
 .workspaceList .workspaceItem:hover {

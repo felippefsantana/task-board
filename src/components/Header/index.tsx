@@ -35,8 +35,8 @@ const Header = () => {
                 <div className={`${styles.headerDropdown} dropdown-menu p-2 border-light-subtle`}>
                   <h2 className="fs-6 text-secondary">Suas Áreas de Trabalho</h2>
                   <div className={styles.workspaceDropdown}>
-                    <div className={`${styles.headerDropdownItem} ${styles.workspaceDropdownItem} rounded-1`}>
-                      <Link to="#" className="d-flex align-items-center px-2">
+                    <div>
+                      <Link to="#" className={`${styles.headerDropdownItem} ${styles.workspaceDropdownItem} d-flex align-items-center px-2 rounded-1`}>
                         {/* <div className={`${styles.workspaceDropdownItemIcon} d-flex align-items-center justify-content-center`}>
                           <div className="rounded-1 d-flex align-items-center justify-content-center bg-success text-white">
                             W
